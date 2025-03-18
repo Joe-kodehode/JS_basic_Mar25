@@ -3,7 +3,6 @@
 // multi-line-comment shift + alt + A
 
 // console log
-
 // console.log("hello world");
 
 // Variables and Data Types
@@ -112,6 +111,7 @@
 // console.log(counter);
 
 // Decrement operator (--) decreases a number by 1:
+// counter--
 // counter -= 4;
 
 // console.log(counter);
