@@ -22,13 +22,12 @@
 // Boolean (true or false)
 // thisIsTrue = true;
 // thisIsFalse = false;
-
 // console.log(thisIsTrue);
 
 // Array (list of values)
 // exampleArray = ["this is my string", 100, false];
-
 // console.log(exampleArray);
+
 // Targeting a specific index in the array (remember indexes start at 0)
 // console.log(exampleArray[3]);
 
