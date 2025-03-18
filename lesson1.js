@@ -106,6 +106,7 @@
 // counter++;
 
 // Do this instead:
+// counter = counter + 3
 // counter += 3;
 // console.log(counter);
 
