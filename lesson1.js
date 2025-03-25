@@ -1,3 +1,5 @@
+// Variables and basic Operators
+
 // Commenting our code
 // hotkey to comment ctrl + *
 // multi-line-comment shift + alt + A

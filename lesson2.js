@@ -1,3 +1,5 @@
+// Typeof, comparison operators and conditionals
+
 // The typeof Operator
 let myVariable = true;
 

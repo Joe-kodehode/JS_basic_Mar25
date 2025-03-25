@@ -1,3 +1,5 @@
+// Variables, Operators, Conditionals recap
+
 // You can redeclare Let but not Const. This doesnt mean the data inside of a const can't be changed!
 
 // const myArray = [1, 2, 3];
