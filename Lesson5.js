@@ -114,6 +114,6 @@ const chainedNumber = myNum.toFixed(2).toString().repeat(2);
 
 console.log(chainedNumber);
 
-let word = "hello";
-word = word.charAt(0).toUpperCase() + word.slice(2);
-console.log(word); // "Hello"
+const word = "hello";
+const capitalized = word.charAt(0).toUpperCase() + word.slice(1);
+console.log(capitalized); // "Hello"
