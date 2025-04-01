@@ -55,7 +55,7 @@ console.log(add());
 // Soft coded (dynamic and reusable!)
 
 function minus(num1, num2) {
-  if (typeof num1 === "number" || typeof num2 === "number") {
+  if (typeof num1 === "number" && typeof num2 === "number") {
     return num1 - num2;
   } else {
     console.log("Error, non-number detected");

@@ -1,13 +1,22 @@
 // Variables and basic Operators
 
-// Commenting our code
+// --------------------------------------
+// Section 1: Commenting our code
+// --------------------------------------
+
 // hotkey to comment ctrl + *
 // multi-line-comment shift + alt + A
 
-// console log
+// --------------------------------------
+// Section 2: console log
+// --------------------------------------
+
 console.log("hello world");
 
-// Variables and Data Types
+// --------------------------------------
+// Section 3: Variables and Data Types
+// --------------------------------------
+
 // Variables store data values. Here we'll see different types of data.
 
 // camelCase
@@ -35,9 +44,9 @@ console.log(exampleArray);
 
 // Object (hold key value pairs)
 let person = {
-  name: "Joe",
+  name: "Simen",
   age: 37,
-  location: "Stavanger",
+  location: "Oslo",
 };
 console.log(person);
 
@@ -55,9 +64,11 @@ console.log(undefinedExample);
 exampleOfNull = null;
 console.log(exampleOfNull);
 
-// Let and Const
+// --------------------------------------
+// Section 4: Declaring variables - Let and Const
+// --------------------------------------
 
-// Using let (value can change):
+// Using let (value can be redeclared):
 let changeableMessage = "I can change!";
 console.log(changeableMessage);
 changeableMessage = "I've changed!";
@@ -68,13 +79,19 @@ healthPoints = 50;
 console.log(healthPoints);
 
 // Using const (value can not be redeclared):
-const fixedValue = "I cannot change!";
+const fixedValue = "I cannot be redeclared!";
 console.log(fixedValue);
+
 // Trying to reassign fixedValue will cause an error:
 
 fixedValue = "Attempting to change...";
 
-// Operators
+// Note: When you declare a variable with const, you can't reassign or redeclare it in the same scope. However, if the constant holds a mutable object (like an array or an object), the properties or elements of that object can be changed.
+
+// --------------------------------------
+// Section 5: Basic Operators
+// --------------------------------------
+
 // Operators perform calculations or comparisons.
 
 let a = 10;
@@ -97,6 +114,18 @@ let counter = 0;
 counter++;
 console.log(counter);
 
+// Decrement operator (--) decreases a number by 1:
+counter--;
+counter -= 4;
+
+console.log(counter);
+
+// Addition assignment (+=):
+let score = 10;
+console.log("Initial score:", score);
+score += 5; // Equivalent to score = score + 5;
+console.log("After adding 5:", score); // 15
+
 // The following 2 lines do the same thing, use the 2nd line.
 counter = counter + 2;
 counter += 2;
@@ -111,18 +140,6 @@ counter++;
 counter = counter + 3;
 counter += 3;
 console.log(counter);
-
-// Decrement operator (--) decreases a number by 1:
-counter--;
-counter -= 4;
-
-console.log(counter);
-
-// Addition assignment (+=):
-let score = 10;
-console.log("Initial score:", score);
-score += 5; // Equivalent to score = score + 5;
-console.log("After adding 5:", score); // 15
 
 // Subtraction assignment (-=):
 score -= 3; // Equivalent to score = score - 3;
