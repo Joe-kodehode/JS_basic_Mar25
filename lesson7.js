@@ -102,17 +102,17 @@ while (count <= 5) {
 
 // Guessing game with while loop
 
-const secret = Math.floor(Math.random() * 10) + 1;
+// const secret = Math.floor(Math.random() * 10) + 1;
 
-let guess = 0;
+// let guess = 0;
 
-while (guess !== secret) {
-  guess++;
-  console.log(`Currently guessing: ${guess}`);
-  if (guess === secret) {
-    console.log(`Correct! The secret number was: ${guess}`);
-  }
-}
+// while (guess !== secret) {
+//   guess++;
+//   console.log(`Currently guessing: ${guess}`);
+//   if (guess === secret) {
+//     console.log(`Correct! The secret number was: ${guess}`);
+//   }
+// }
 
 // console.log(secret);
 
@@ -176,6 +176,53 @@ for (let name of moreNames) {
     break;
   }
   console.log(name);
+}
+
+// --------------------------------------
+// Section 9: Loop Practice Challenges
+// --------------------------------------
+
+// Challenge 1: Log even numbers from 1 to 100
+
+// for (let i = 1; i <= 100; i++) {
+//   if (i % 2 === 0) {
+//     console.log(i);
+//   }
+// }
+
+// Challenge 2: Reverse an array using a loop
+
+myArray = ["a", "b", "c", "d"];
+computerArray = ["mouse", "monitor", "gpu", "cpu"];
+
+const reverseArray = (arr) => {
+  const reversed = [];
+  for (let i = myArray.length - 1; i >= 0; i--) {
+    reversed.push(arr[i]);
+  }
+
+  return reversed;
+};
+console.log(reverseArray(computerArray));
+
+// Challenge 3: Guessing game with a limited number of guesses
+
+const secretNumber = Math.ceil(Math.random() * 10);
+let guessCount = 0;
+const maxGuesses = 5;
+let guessed = false;
+
+while (guessCount < maxGuesses && !guessed) {
+  guessCount++;
+  const guess = guessCount; // Simulated guess
+  console.log(`Guess ${guessCount}: ${guess}`);
+  if (guess === secretNumber) {
+    console.log(`Correct! The number was ${guess}`);
+    guessed = true;
+  }
+}
+if (!guessed) {
+  console.log(`Out of guesses! The number was ${secretNumber}`);
 }
 
 // --------------------------------------
