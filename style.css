@@ -1,0 +1,14 @@
+.custom-paragraph {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-top: 10px;
+}
+
+.box {
+  height: 200px;
+  width: 200px;
+}
+
+.active {
+  background-color: green;
+}
