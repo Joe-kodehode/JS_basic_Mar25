@@ -1,3 +1,4 @@
+// Global Variables
 let randomNumber;
 let totalGuesses;
 let guessedNumbers;
@@ -14,7 +15,7 @@ const guessButton = document.getElementById("guessButton");
 function initGame() {
   randomNumber = Math.floor(Math.random() * 100) + 1;
   totalGuesses = 10;
-  guessedNumbers = [];
+  guessedNumbers = [5, 10];
   feedback.textContent = "";
   guessesLeftDisplay.textContent = `Guesses left: ${totalGuesses}`;
   previousGuessesElement.textContent = "";
